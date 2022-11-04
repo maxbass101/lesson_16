@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <link rel="stylesheet" href="css/style.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>lesson_16</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header"></header>
+      <main class="page">
+         <div class="page__container">
+
+            <!-- <form class="form" action="#" method="POST" enctype="multipart/form-data">
+               <div class="form__line">
+                  <label class="form__label" for="age-01">type="text"</label>
+                  <input class="form__input" required type="text" name="age-01" autocomplete="off" placeholder="text">
+               </div>
+               <div class="form__line">
+                  <label class="form__label" for="mail-01">type="email"</label>
+                  <input class="form__input" required type="email" name="mail-01" autocomplete="off"
+                     placeholder="email">
+               </div>
+               <div class="form__line">
+                  <input class="form__input" type="hidden" value="field-hiden" name="hiden">
+               </div>
+               <div class="form__line">
+                  <label class="form__label" for="phone-01">type="tel"</label>
+                  <input class="form__input" autocomplete="off" type="tel" name="phone-01" placeholder="tel">
+               </div>
+               <div class="form__line">
+                  <label class="form__label" for="password-01">type="password"</label>
+                  <input class="form__input" autocomplete="off" type="password" name="password-01"
+                     placeholder="password">
+               </div>
+               <div class="form__line">
+                  <label class="form__label" for="number-01">type="number"</label>
+                  <input class="form__input" autocomplete="off" type="number" name="number-01" placeholder="number">
+               </div>
+               <div class="form__line">
+                  <label class="form__label" for="color-01">type="color"</label>
+                  <input class="form__input" value="#333333" autocomplete="off" type="color" name="color-01">
+               </div>
+               <div class="form__line">
+                  <label class="form__label" for="search-01">type="search"</label>
+                  <input class="form__input" autocomplete="off" type="search" name="search-01" placeholder="search">
+               </div>
+               <div class="form__line">
+                  <label class="form__label" for="date-01">type="date"</label>
+                  <input class="form__input" autocomplete="off" type="date" name="date-01">
+               </div>
+               <div class="form__line">
+                  <label class="form__label" for="range-01">type="range"</label>
+                  <input class="form__input" type="range" name="range-01">
+               </div>
+               <div class="form__line">
+                  <div class="form__title">Любимая машина</div>
+                  <div class="form__radio">
+                     <input checked id="sens" class="form__input form__input_radio" value="sens" required type="radio"
+                        name="car">
+                     <label for="sens">Sens</label>
+                  </div>
+                  <div class="form__radio">
+                     <input id="mers" class="form__input form__input_radio" value="mers" required type="radio"
+                        name="car">
+                     <label for="mers">Mersedes</label>
+                  </div>
+                  <div class="form__radio">
+                     <input id="bmw" class="form__input form__input_radio" value="bmw" required type="radio"
+                        name="car">
+                     <label for="bmw">BMW</label>
+                  </div>
+               </div>
+               <div class="form__line">
+                  <label class="form__label" for="file-01">type="file"</label>
+                  <input class="form__input" type="file" accept="image/png, image/jpeg" multiple name="file-01">
+               </div>
+               <div class="form__line">
+                  <label for="textarea">textarea</label>
+                  <textarea class="form__area" name="message" id="textarea" cols="30" rows="10"
+                     placeholder="textarea">что-то</textarea>
+               </div>
+               <div class="form__line">
+                  <button type="reset">Reset</button>
+                  <button type="submit">Submit</button>
+               </div>
+            </form> -->
+
+            <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="form">
+               <div class="form__line">
+                  <label for="name-01" class="form__label">Введите имя</label>
+                  <input class="form__input" id="name-01" required autocomplete="off" type="text" name="name-01"
+                     placeholder="имя">
+               </div>
+               <div class="form__line">
+                  <label for="password" class="form__label">Введите пароль</label>
+                  <input class="form__input" required id="password" type="password" name="pass" placeholder="password">
+               </div>
+               <div class="form__line">
+                  <input class="form__input" type="hidden" value="field-hiden" name="hiden">
+               </div>
+               <div class="form__line">
+                  <input id="is-car" class="form__input form__input--chk" type="checkbox" name="is-car">
+                  <label for="is-car">Есть машина?</label>
+               </div>
+               <div class="form__line">
+                  <input id="home" class="form__input form__input--chk" type="checkbox" name="home">
+                  <label for="home">Есть жильё?</label>
+               </div>
+               <div class="form__line">
+                  <div class="form__title">Любимая машина</div>
+                  <div class="form__radio">
+                     <input checked id="sens" class="form__input form__input--radio" value="sens" required type="radio"
+                        name="car">
+                     <label for="sens">Sens</label>
+                  </div>
+                  <div class="form__radio">
+                     <input id="mers" class="form__input form__input--radio" value="mers" required type="radio"
+                        name="car">
+                     <label for="mers">Mersedes</label>
+                  </div>
+                  <div class="form__radio">
+                     <input id="bmw" class="form__input form__input--radio" value="bmw" required type="radio"
+                        name="car">
+                     <label for="bmw">BMW</label>
+                  </div>
+               </div>
+               <div class="form__line">
+                  <label for="i-am">Кто я?</label>
+                  <select multiple name="i-am" id="i-am">
+                     <option selected value="max">max</option>
+                     <option value="bass">bass</option>
+                     <option value="bass">solo</option>
+                     <option value="bass">rithm</option>
+                  </select>
+               </div>
+               <div class="form__line">
+                  <div class="checkbox">
+                     <input id="castom-check" type="checkbox" class="checkbox__input">
+                     <label class="checkbox__label" for="castom-check"><span class="checkbox__text">Кастомный
+                           checkbox</span></label>
+                  </div>
+               </div>
+               <div class="form__line">
+                  <button class="form__button" type="submit">Submit</button>
+               </div>
+            </form>
+         </div>
+         <section class="page__send send-block">
+            <div class="send-block__container">
+               <div class="send-block__image">
+                  <img src="img/send/illustration.svg" alt="illustration">
+               </div>
+               <div class="send-block__content">
+                  <div class="send-block__title title">
+                     <h3 class="title__subtitle">Any questions?</h3>
+                     <h2 class="title__title">Drop us a line</h2>
+                  </div>
+                  <form action="https://jsonplaceholder.typicode.com/posts" method="POST"
+                     class="send-block__form form-send">
+                     <div class="form-send__user">
+                        <div class="from-send__row">
+                           <div class="form-send__line">
+                              <label for="first-name" class="form-send__label">First Name*</label>
+                              <input type="text" class="form-send__input" placeholder="Your first name" required
+                                 name="first-name" id="first-name">
+                           </div>
+                           <div class="form-send__line">
+                              <label for="last-name" class="form-send__label">Last Name*</label>
+                              <input type="text" class="form-send__input" placeholder="Your last name" required
+                                 name="last-name" id="last-name">
+                           </div>
+                        </div>
+                        <div class="from-send__row">
+                           <div class="form-send__line">
+                              <label for="email" class="form-send__label">Email*</label>
+                              <input type="email" class="form-send__input" placeholder="Your working email" required
+                                 name="email" id="email">
+                           </div>
+                           <div class="form-send__line">
+                              <label for="phone" class="form-send__label">Phone</label>
+                              <input type="tel" class="form-send__input" placeholder="Your phone number" name="phone"
+                                 id="phone">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form-send__message">
+                        <label for="message" class="form-send__label">Message*</label>
+                        <textarea class="form-send__textarea" name="message" id="message" placeholder="Your message"
+                           required></textarea>
+                     </div>
+                     <div class="form-send__actions">
+                        <div class="form-send__line checkbox-send">
+                           <input class="checkbox-send__input" type="checkbox" name="agree" id="agree">
+                           <label class="checkbox-send__label" for="agree">
+                              <span class="checkbox-send__text">
+                                 I agree to receive communications from Createx Online School
+                              </span>
+                           </label>
+                        </div>
+                        <div class="form-send__line button">
+                           <button class="button__send" type="submit"><span>Send message</span></button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer"></footer>
+   </div>
+</body>
+
+</html>
